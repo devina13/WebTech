@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input" placeholder="username">
+    <br><br><br>
+    <button onclick="genOTP()">Generate OTP</button>
+    <br><br>
+    <div class="div">
+        <span id="otp">  </span>
+    </div>
+    <script>
+        function genOTP()
+        {
+           var name=document.getElementById("input").value //fetch the value from input at the beginning
+            var x=Math.random()*(9999-1000)+1000
+        console.log(x)
+        var result=Math.floor(x)
+        console.log(result)
+        document.getElementById("otp").innerHTML=`hi ${name } your generated otp is ` + result
+        }
+    </script>
+</body>
+</html>

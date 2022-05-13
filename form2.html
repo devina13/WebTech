@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        form{
+            border: 2px solid black;
+        padding: 20px;
+        width: 70%;
+        margin: auto;
+        background-color: yellow;
+        overflow: hidden;
+        }
+        /* input{
+            float: right;
+        } */
+    </style>
+</head>
+<body>
+    <form>
+        <label for=""> Email ID: </label>
+        <input type="text" required placeholder="please enter email"><br><br>
+        <label for="">Password: </label>
+        <input type="text" required placeholder="enter pwd"><br><br>
+        <label for="">Confirm Password: </label>
+        <input types="text" required> <br><br>
+        <label for="gen"> Gender</label>
+        <input type="radio" name="gen" id=""> Male
+        <input type="radio" name="gen" id=""> Female
+        <input type="radio" name="gen" id=""> Others <br><br>
+        <label type="edu"> Qualification:</label>
+        <select id="edu" name="edu">
+            <option value="">BCA</option>
+            <option value="">MCA</option>
+            <option value="">BTech</option>
+        </select><br><br>
+        <label for=""> Year Of Pass out</label>
+        <!-- use MIN and MAX to set the number scroller with limited values. -->
+        <input type="number" required min="2015" max="2025"> <br><br>
+        <label for=""> Date of Birth:</label>
+        <input type="date"><br><br>
+        <label for="">Place </label>
+        <input type="text" required><br><br>
+        <label for="add">Address:</label>
+        <textarea name="" id="add" cols="30" rows="10"></textarea><br><br>
+        <label for="sub">Subject:</label>
+        <input type="checkbox" name="sub" id="">WebTech
+        <input type="checkbox" name="sub" id="">Java
+        <input type="checkbox" name="sub" id="">Manual
+        <input type="checkbox" name="sub" id="">Selemium
+        <br><br>
+        <label for="place">City: </label>
+        <input list="city" name="place">
+        <!-- if some of the names are not there in the list we can write any value, the field can accept. -->
+        <datalist id="city">
+            <option value="mangalore">Mangalore</option>
+            <option value="kerala">Kerala</option>
+            <option value="karnataka">Karnataka</option>
+        </datalist><br><br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
